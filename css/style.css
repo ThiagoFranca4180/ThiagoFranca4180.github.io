@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html body{
+    width: 100%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    background: var(--surface-color);
+    
+}
+
+
+.profile{
+    text-align: center;
+    margin-top: 20px;
+    margin: 2rem;
+}
+
+.avatar{
+    width: 100px;
+    border-radius: 50%;
+    border:3px solid var(--surface-color-hover);
+    box-shadow: 0 0 20px white ;
+
+}
+
+:root {
+    --text-color: white;
+    --stroke-color: rgba(27, 28, 41, 0.247);
+    --surface-color:  rgb(74, 117, 167);
+    --surface-color-hover: rgb(32, 59, 90);
+    
+    
+}
+
+
+
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 1rem;
+
+}
+
+h2{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/*------Listas----------*/
+
+ul {
+    list-style: none;
+
+    margin: 30px  auto 0px;
+    padding: 64px  2rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    
+
+    padding: 16px 24px;
+
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    
+    text-decoration: none;
+    font-weight: 400;
+
+    transition: background 0.5s; 
+}
+
+/*--------Sudo Selector-----------*/
+
+ul li a:hover {
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--stroke-color);
+    color: var(--text-color);
+}
+
+/*--------Social-----------*/
+
+#social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    padding: 24px 0;
+
+    font-size: 24px;
+}
+
+#social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    color: var(--text-color);
+
+
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#social-links a:hover {
+    background: rgb(32, 59, 90);
+    
+} 
+
+/*--------Rodapé-------------*/
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 13px;
+} 
